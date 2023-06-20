@@ -1,0 +1,437 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/montserrat-v25-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v25-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/montserrat-v25-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v25-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v25-latin-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v25-latin-500.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/montserrat-v25-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v25-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v25-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v25-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v25-latin-500.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v25-latin-600.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/montserrat-v25-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v25-latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v25-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v25-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v25-latin-600.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.01em;
+  color: #25202f;
+}
+
+/* Header start */
+
+.header__background {
+  background: #023047;
+}
+
+.wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 121px;
+  flex-wrap: wrap;
+}
+
+.header__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125%;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  transition: 1s;
+}
+
+/* Анимация подчеркивания Start */
+li .header__link::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #ffffff;
+  transition: width 0.5s;
+}
+
+li .header__link:hover::after {
+  width: 100%;
+}
+/* Анимация подчеркивания  Stop */
+
+.header__list {
+  display: flex;
+  list-style-type: none;
+  gap: 53px;
+  letter-spacing: 0.01em;
+  color: #25202f;
+}
+
+/* Выподающее меню */
+.header__item {
+  position: relative;
+}
+
+.header__list-sub {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+}
+
+.header__item-sub {
+  width: 150px;
+  height: 50px;
+  list-style: none;
+  background: #022739;
+  position: relative;
+  display: flex;
+}
+
+.header__link-sub {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 13px;
+}
+
+.header__nav li:hover ul {
+  display: block;
+}
+
+.header__list-sub li:hover.header__item-sub {
+  background: #023a55;
+}
+
+.header__pointer {
+  padding-left: 15px;
+}
+
+.header__pointer img {
+  margin-left: 12px;
+}
+
+/*Номер телефона  */
+.header__number-tel {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125%;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-left: 17px;
+}
+
+.header__logo {
+  width: 75px;
+  height: 62px;
+}
+
+/* Фоновое изображение - банер  */
+.header__bottom {
+  background: url(../img/towers.png) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.banner__wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Заголовок */
+.main__header-h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 75px;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* Подзаголовок */
+.main__header-p {
+  max-width: 585px;
+  height: 73px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* header end */
+
+/* main start */
+
+/* Секция о нас */
+.description {
+  padding: 120px 15px;
+}
+
+.description__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__content {
+  padding-right: 40px;
+}
+
+.description__title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 75px;
+  margin-bottom: 60px;
+}
+
+.description__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125%;
+  max-width: 470px;
+}
+
+.description__foto {
+  width: 600px;
+}
+
+.description__foto img {
+  max-width: 100%;
+}
+
+@media (max-width: 991.91px){
+  .description__body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description__content {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .description__text  {
+    max-width: 100%;
+  }
+
+  .description__foto {
+    width: 100%;
+  }
+}
+
+#more {
+  display: none;
+  margin-bottom: 28px;
+}
+
+#dots {
+  color: #4E8AFF;
+  cursor: pointer;
+}
+
+
+
+.title-h2 {
+  margin-bottom: 60px;
+  width: 473px;
+  height: 75px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 75px;
+  display: flex;
+  align-items: center;
+  color: #25202f;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+/* Секция премии */
+.wrapper__prizes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.prizes__name {
+  display: flex;
+  flex-direction: column;
+}
+
+.prizes__name img {
+  margin-bottom: 25px;
+}
+
+.prizes__name .prizes__name-text {
+  margin-bottom: 15px;
+}
+
+.wrapper__prizes {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Секция галереи */
+.gallery__wrapper {
+  margin-top: 120px;
+}
+
+.btn {
+  position: absolute;
+  border-radius: 100%;
+  border: 0;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gallery .slick-dots {
+  bottom: -60px;
+}
+
+.slick-dots ul {
+  list-style: none;
+}
+.slick-dots .slick-active button {
+  background-color: #2E6EFF;
+}
+.slick-dots li button{
+  background-color: #EDEDED;
+  font-size: 0;
+  border-radius: 50%;
+}
+.slick-dots li button :hover{
+  background-color: gray;
+}
+
+.gallery__img {
+  position: relative;
+  /* background-image: url("../img/image\ 5.png"); */
+}
+
+/* main end */
+
+/* footer start */
+
+.footer {
+  height: 250px;
+  margin-top: 121px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+  align-items: center;
+}
+
+.footer__location {
+  display: flex;
+  gap: 13px;
+}
+
+.footer__namber:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.footer__location-link {
+  color: #ffffff;
+}
+
+.vaha{
+  width: 387px;
+  height: 367px;
+}
+
+.tn-atom{
+  text-decoration: none;
+  color: black;
+}
+
+/* footer end */
+
+
+/* body {
+  background-color: #333;
+} */

@@ -1,0 +1,249 @@
+.header__background  {
+    background: #023047;
+}
+
+.wrapper {
+    max-width: 1240px; 
+    margin: 0 auto;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 121px;
+    flex-wrap: wrap;
+}
+
+.header__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 125%;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+/* Анимация подчеркивания Start */
+li .header__link::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #FFFFFF;
+    transition: width 0.5s;
+}
+
+li .header__link:hover::after  {
+    width: 100%;
+}
+/* Анимация подчеркивания  Stop */
+
+
+.header__list {
+    display: flex;
+    list-style-type: none;
+    gap:53px;
+    letter-spacing: 0.01em;
+    color: #25202F;
+} 
+
+
+/* Выпадающее меню */
+.header__item {
+    position: relative; 
+}
+
+.header__list-sub {
+    position: absolute; 
+    left: 0; 
+    top: 100%;
+    display: none; 
+}
+
+.header__item-sub {
+    width: 150px;
+    height: 50px;
+    list-style: none;
+    background:#022739;
+    position: relative;
+    display: flex;   
+}
+
+.header__link-sub {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 13px;
+}
+
+.header__nav li:hover ul {
+    display: block;
+}
+
+.header__list-sub li:hover.header__item-sub {
+    background:#023a55;
+    
+}
+
+.header__pointer {
+    padding-left: 15px;
+}
+
+.header__pointer  img {
+    margin-left: 12px; 
+}
+
+
+/*Номер телефона  */
+.header__number-tel {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 125%;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 17px;
+}
+
+.header__logo {
+    width: 75px;
+    height: 62px;
+}
+
+
+/* Фоновое изображение - банер  */
+.header__bottom {
+    background: url(../img/towers.png) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.banner__wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {       
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* Заголовок */
+.main__header-h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 75px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Подзаголовок */
+.main__header-p {
+    max-width: 585px;
+    height: 73px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+    /* header end */
+    main{
+        padding: 120px 0 0 0;
+    }
+    .main-text{
+        padding: 10px
+    }
+    .main-container__items{
+        display: flex;
+        
+    }
+    .main-item__img{
+        width: 386px;
+        height: 400px;
+    }
+    .main-item{
+        margin: 0 40px 25px 0 ;
+    }
+    .main-text__subtitle{
+        font-size: 30px;
+    }
+    .main-text__title{
+        font-size: 45px;
+        font-weight: 700;
+    }
+    .main-footer__me{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main-footer__cont{
+        border: solid 1px black;
+        width: 386px;
+        height: 80px;
+        display: flex;
+        padding: 35px 0 30px 0px;
+    }
+    .main-footer__im{
+        width: 48px;
+        height: 60px;
+        margin-right: 25px;
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+    .main-p{
+        padding: 0 0 30px 0;
+        font-size: 22px;
+    }
+    .footer {
+        height: 250px;
+        margin-top: 121px;
+    }
+    
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 250px;
+        align-items: center;
+    }
+    
+    .footer__location {
+        display: flex;
+        gap: 13px;
+    }
+    
+    .footer__namber:not(:last-child){
+     margin-bottom:21px;
+    }
+    
+    .footer__location-link {
+        color: #FFFFFF;
+    }
+   
